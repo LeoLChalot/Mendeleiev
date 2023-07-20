@@ -1,0 +1,122 @@
+:root{
+    --alcalin: rgba(58, 87, 85, 0.8);
+    --alcalino-terreux: rgba(100, 27, 27, 0.8);
+    --metaux-transition: rgba(70, 61, 96, 0.8);
+    --metaux-post-transition: rgba(31, 84, 64, 0.8);
+    --metalloide: rgba(77, 59, 30, 0.8);
+    --non-metaux: rgba(71, 16, 229, 0.8);
+    --gaz-noble: rgba(101, 59, 59, 0.8);
+    --lanthanoide: rgba(47, 66, 112, 0.8);
+    --actinide: rgba(80, 56, 43, 0.8);
+    --inconnu: rgba(87, 87, 87, 0.8);
+    --bg-dark: rgb(17, 17, 17);
+}
+
+.alcalin{
+    background-color: var(--alcalin);
+}
+.alcalino-terreux{
+    background-color: var(--alcalino-terreux);
+}
+.metaux-transition{
+    background-color: var(--metaux-transition);
+}
+.metaux-post-transition{
+    background-color: var(--metaux-post-transition);
+}
+.metalloide{
+    background-color: var(--metalloide);
+}
+.non-metaux{
+    background-color: var(--non-metaux);
+}
+.gaz-noble{
+    background-color: var(--gaz-noble);
+}
+.lanthanoide{
+    background-color: var(--lanthanoide);
+}
+.actinide{
+    background-color: var(--actinide);
+}
+.inconnu{
+    background-color: var(--inconnu);
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark);
+}
+
+table tr td{
+    width: 60px;
+    height: 60px;
+    color: #b9b9b9;
+    border-radius: 8px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.info{
+    background-color: inherit;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: .2s all ease;
+
+}
+
+.info:hover{
+    z-index: 999;
+    transform: scale(1.8);
+    box-shadow: 0 0 10px 100em rgba(42, 42, 42, .8);
+    backdrop-filter: blur(1px);
+    border: 3px solid black;
+    color: white;
+}
+.info p{
+    display: block;
+}
+.number, .weight{
+    width:auto;
+    font-size: 8px;
+    padding: 2px 5px;
+}
+.weight{
+    margin-left: auto;
+}
+.letter, .name{
+    width: 100%;
+}
+.letter{
+    font-size: 22px;
+    font-weight: bold;
+}
+.name{
+    font-size: 8px;
+}
+
+.vr-separator{
+    width: 15px;
+}
+.hr-separator{
+    height: 15px;
+}
+
